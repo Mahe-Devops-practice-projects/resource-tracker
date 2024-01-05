@@ -6,7 +6,7 @@
 #
 #Version : V1
 #
-# This ecript is used resource tracker.
+# This script will report the AWS resource usage.
 #
 ############################
 
