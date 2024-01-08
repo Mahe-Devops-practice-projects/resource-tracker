@@ -1,0 +1,31 @@
++ echo 'This list s3 users'
+This list s3 users
++ aws s3 ls
+2023-12-07 02:20:24 mahesh2424
+2023-12-07 03:43:34 mybucket23434
++ echo ' this list ec2 instances'
+ this list ec2 instances
++ jq '.Reservations[].Instances[].InstanceId'
++ aws ec2 describe-instances
+"i-02521d02cada64ffd"
++ echo ' this list lambda functions'
+ this list lambda functions
++ aws lambda list-functions
+{
+    "Functions": []
+}
++ echo ' this list Iam users'
+ this list Iam users
++ aws iam list-users
+{
+    "Users": [
+        {
+            "Path": "/",
+            "UserName": "mahesh-mahe",
+            "UserId": "AIDAWP7J45DZ2MVIRIIJD",
+            "Arn": "arn:aws:iam::446630258931:user/mahesh-mahe",
+            "CreateDate": "2023-12-20T00:14:03+00:00",
+            "PasswordLastUsed": "2023-12-20T00:15:23+00:00"
+        }
+    ]
+}
